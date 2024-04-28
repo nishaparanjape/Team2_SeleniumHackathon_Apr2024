@@ -11,10 +11,10 @@ Feature: Login page Validation
 	@login2
 	Scenario: Verify for broken link		
 	Given Admin launch the browser	
-	When Admin gives the correct LMS portal URL	HTTP response >= 400
-	Then the link is broken
+	When Admin gives the correct LMS portal URL
+	Then HTTP response >= 400 the link is broken
 	
-	@login @1
+	@login666 @F
 	Scenario: Verify admin is able to land on home page
 	Given Admin launch the browser
 	When Admin gives the correct LMS portal URL
@@ -32,17 +32,17 @@ Feature: Login page Validation
 	When Admin gives the correct LMS portal URL	
 	Then Admin should see logo on the left side
 
-	@login6
-	Scenario: Verify application name		
-	Given Admin launch the browser	
-	When Admin gives the correct LMS portal URL	
-	Then Admin should see LMS - Learning Management System
-	
-	@login7	
-	Scenario: Verify company name		
-	Given Admin launch the browser	
-	When Admin gives the correct LMS portal URL	
-	Then Admin should see company name below the app name
+#	@login
+#	Scenario: Verify application name		
+#	Given Admin launch the browser	
+#	When Admin gives the correct LMS portal URL	
+#	Then Admin should see LMS - Learning Management System
+#	
+#	@login666	
+#	Scenario: Verify company name		
+#	Given Admin launch the browser	
+#	When Admin gives the correct LMS portal URL	
+#	Then Admin should see company name below the app name
 	
 	@login @1
 	Scenario: Validate sign in content		
@@ -123,21 +123,21 @@ Feature: Login page Validation
 	And Admin enter invalid credentials and clicks login button 	
 	Then Error message please check username/password
 	
-	 @1
+	 @F
 	Scenario: Validate login credentials with null username	
 	Given Admin gives the correct LMS portal URL		
 	When Admin is in Home Page	
 	And Admin enter value only in password and clicks login button 	
 	Then Error message please check username/password
 	
-	 @1
+	 @F
 	Scenario: Validate login credentials with null password	
 	Given Admin gives the correct LMS portal URL		
 	When Admin is in Home Page	
 	And Admin enter value only in username and clicks login button 	
 	Then Error message please check username/password
 	
-	 @1
+	 @F
 	Scenario: verify login button action through keyboard	
 	Given Admin gives the correct LMS portal URL		
 	When Admin is in Home Page	

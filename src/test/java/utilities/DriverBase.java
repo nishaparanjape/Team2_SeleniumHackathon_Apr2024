@@ -17,7 +17,7 @@ public class DriverBase {
 	public static WebDriver driver;
 
 	public WebDriver initDriver(String browser) throws IOException {
-
+		
 		reader = new ConfigReader();
 		browser = reader.getBrowser();
 
@@ -42,13 +42,17 @@ public class DriverBase {
 	}
 
 	public WebDriver getDriver() {
-
 		return driver;
 	}
 	
 	public void closeDriver() {
-		//driver.close();
+		driver.close();
 	}
+	
+	public void quitDriver() {
+		driver.quit();
+	}
+	
 
 }
 

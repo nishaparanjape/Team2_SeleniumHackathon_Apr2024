@@ -4,6 +4,19 @@
   <artifactId>Team2_Selenium_Apr2024</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <repositories>
+
+  <repository>
+
+    <id>AsposeJavaAPI</id>
+
+    <name>Aspose Java API</name>
+
+    <url>https://releases.aspose.com/java/repo/</url>
+
+  </repository>
+
+</repositories>
   
 <dependencies>
 	<!--  https://mvnrepository.com/artifact/org.testng/testng  -->
@@ -103,15 +116,59 @@
 	    <version>1.2.17</version>
 	</dependency>
 	
-	
-	<dependency>
-<groupId>net.sourceforge.tess4j</groupId>
-<artifactId>tess4j</artifactId>
-<version>4.5.4</version>
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+<dependency>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>5.11.0</version>
 </dependency>
 
 
+<dependency>
+<groupId>com.aspose</groupId>
+<artifactId>aspose-ocr</artifactId>
+<version>24.4.0</version>
+</dependency>
+
+<dependency>
+    <groupId>com.asprise.ocr</groupId>
+    <artifactId>java-ocr-api</artifactId>
+    <version>[15,)</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.23.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.23.0</version>
+</dependency>
+<dependency>	
+			<groupId>tech.grasshopper</groupId>	
+			<artifactId>extentreports-cucumber7-adapter</artifactId>	
+			<version>1.14.0</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+<!-- Extent Report Adapter for Cucumber -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports-cucumber4-adapter</artifactId>
+        <version>1.0.7</version>
+    </dependency>
 
 </dependencies>
+
+
 
 </project>

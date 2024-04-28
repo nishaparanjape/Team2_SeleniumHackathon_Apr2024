@@ -37,9 +37,7 @@ public class ExcelUtils
         int colCount = sheet.getRow(0).getLastCellNum();
 
         Object[][] data = new Object[rowCount][colCount];
-//        System.out.println("no of rows : " + rowCount);
-//        System.out.println("no of cols : " + colCount);
-        
+
         for (int i = 1; i <= rowCount; i++) {
             Row row = sheet.getRow(i);
             for (int j = 0; j < colCount; j++) {
