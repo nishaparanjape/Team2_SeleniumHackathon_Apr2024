@@ -54,18 +54,8 @@ public class LoginPage {
 		System.out.println(" ------------------in constructor login page----------------------");
 		PageFactory.initElements(driver, this);
 		System.out.println("driver ::::: " + driver);
-
 	}
 
-	public void launchUrl() throws IOException {
-		String filePath = reader.getExcelPath();
-		String sheetName = "Login";
-		Object[][] testData;
-		testData = ExcelUtils.readDataFromExcel(filePath, sheetName);			
-		System.out.println(" Data : " + testData[0][0]);
-		driver.get(testData[0][0].toString());
-	}
-	
 	public void launchInvalidUrl() throws IOException {
 		String filePath =  reader.getExcelPath();
 		String sheetName = "Login";
@@ -109,6 +99,15 @@ public class LoginPage {
       }
         return responseCode;
     }   
+	
+	public void launchUrl() throws IOException {
+		String filePath = reader.getExcelPath();
+		String sheetName = "Login";
+		Object[][] testData;
+		testData = ExcelUtils.readDataFromExcel(filePath, sheetName);			
+		System.out.println(" Data : " + testData[0][0]);
+		driver.get(testData[0][0].toString());
+	}
 
 	public void enterUserName() {
 		//String userName = reader.getUsername();

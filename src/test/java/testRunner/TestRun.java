@@ -12,9 +12,12 @@ import io.cucumber.testng.CucumberOptions;
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 	monochrome=false,  //console output color
-	tags = "", //tags from feature file	
+	tags = "@batchTrial", //tags from feature file	
 	publish = true,
-    features = {"src/test/resources/features/login.feature"},
+    features = {"src/test/resources/features/01login.feature",
+    		"src/test/resources/features/02dashboard.feature",    		
+    		"src/test/resources/features/03batchValidation.feature",
+    		"src/test/resources/features/08UserValidation.feature"},
 	glue= {"stepDefinitions", "hooks"}) //location of step definition files
 
 public class TestRun extends AbstractTestNGCucumberTests{
