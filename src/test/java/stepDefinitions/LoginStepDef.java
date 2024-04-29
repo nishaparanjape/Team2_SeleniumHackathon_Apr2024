@@ -1,10 +1,12 @@
 package stepDefinitions;
 
 import java.io.IOException;
+
 import org.testng.Assert;
-import com.aspose.ocr.AsposeOCRException;
-import io.cucumber.java.en.*;
-import net.sourceforge.tess4j.TesseractException;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjectModel.LoginPage;
 import utilities.LoggerLoad;
 
@@ -67,13 +69,13 @@ public class LoginStepDef {
 	}
 
 	@Then("Admin should see LMS - Learning Management System")
-	public void admin_should_see_lms_learning_management_system() throws AsposeOCRException {
+	public void admin_should_see_lms_learning_management_system() {
 	    login.CheckHeading();
 		LoggerLoad.info("....................Checked heading....................");
 	}
 
 	@Then("Admin should see company name below the app name")
-	public void admin_should_see_company_name_below_the_app_name() throws TesseractException {
+	public void admin_should_see_company_name_below_the_app_name() {
 	    login.CheckCompanyName();
 		LoggerLoad.info("....................Checked Company Name....................");
 	}

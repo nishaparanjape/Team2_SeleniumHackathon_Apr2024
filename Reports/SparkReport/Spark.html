@@ -1,0 +1,4918 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Team2 - Selenium hackathon Apr 2024 - Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 28, 2024 11:58:18 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@BatchPage04</a><a class="dropdown-item" href="#">@Userpagevalidation7</a><a class="dropdown-item" href="#">@BatchPage02</a><a class="dropdown-item" href="#">@1</a><a class="dropdown-item" href="#">@dashboard8</a><a class="dropdown-item" href="#">@dashboard9</a><a class="dropdown-item" href="#">@Userpagevalidation1</a><a class="dropdown-item" href="#">@BatchPage09</a><a class="dropdown-item" href="#">@dashboard10</a><a class="dropdown-item" href="#">@F</a><a class="dropdown-item" href="#">@BatchPage10</a><a class="dropdown-item" href="#">@dashboard5</a><a class="dropdown-item" href="#">@login1</a><a class="dropdown-item" href="#">@Batch_Module1</a><a class="dropdown-item" href="#">@dashboard12</a><a class="dropdown-item" href="#">@BatchPage06</a><a class="dropdown-item" href="#">@login666</a><a class="dropdown-item" href="#">@BatchPage08</a><a class="dropdown-item" href="#">@login2</a><a class="dropdown-item" href="#">@dashboard3</a><a class="dropdown-item" href="#">@dashboard7</a><a class="dropdown-item" href="#">@dashboard11</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@BatchPage05</a><a class="dropdown-item" href="#">@Userpagevalidation2</a><a class="dropdown-item" href="#">@dashboard4</a><a class="dropdown-item" href="#">@HomePage</a><a class="dropdown-item" href="#">@userPageModule</a><a class="dropdown-item" href="#">@dashboard6</a><a class="dropdown-item" href="#">@dashboard1</a><a class="dropdown-item" href="#">@BatchPage01</a><a class="dropdown-item" href="#">@Userpagevalidation3</a><a class="dropdown-item" href="#">@Userpagevalidation4</a><a class="dropdown-item" href="#">@Userpagevalidation5</a><a class="dropdown-item" href="#">@dashboard2</a><a class="dropdown-item" href="#">@Userpagevalidation6</a><a class="dropdown-item" href="#">@dashboard</a><a class="dropdown-item" href="#">@BatchPage03</a><a class="dropdown-item" href="#">@BatchPage07</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login page Validation</p>
+            <p class="text-sm">
+              <span>11:58:25 PM</span> / <span>00:00:34:575</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login page Validation</h5>
+<span class='badge badge-success'>04.28.2024 11:58:25 PM</span>
+<span class='badge badge-danger'>04.28.2024 11:59:00 PM</span>
+<span class='badge badge-default'>00:00:34:575</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify admin is able to land on home page with invalid URL</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_invalid_lms_portal_url()">
+                <span>When Admin gives the invalid LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_receive_page_not_found_error(java.lang.Integer)">
+                <span>Then Admin should receive 404 page not found error</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Verify for broken link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.the_link_is_broken(int)">
+                <span>Then HTTP response >= 400 the link is broken</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Verify admin is able to land on home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_land_on_the_home_page()">
+                <span>Then Admin should land on the home page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Verify the text spelling in the page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_correct_spellings_in_all_fields()">
+                <span>Then Admin should see correct spellings in all fields</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Verify the company logo</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_logo_on_the_left_side()">
+                <span>Then Admin should see logo on the left side</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Validate sign in content</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see(java.lang.String)">
+                <span>Then Admin should see "Please login to LMS application"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Verify text field is present</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_two_text_field()">
+                <span>Then Admin should see two text field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Verify text on the first text field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_in_the_first_text_field(java.lang.String)">
+                <span>Then Admin should see "user" in the first text field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Verify asterik next to user text</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_symbol_next_to_user_text()">
+                <span>Then Admin should see * symbol next to user text</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>Verify text on the second text field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_in_the_second_text_field(java.lang.String)">
+                <span>Then Admin should see "password" in the second text field</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>Verify asterik next to password text</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_symbol_next_to_password_text()">
+                <span>Then Admin should see * symbol next to password text</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>Verify the alignment input field for the login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_input_field_on_the_centre_of_the_page()">
+                <span>Then Admin should see input field on the centre of the page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>verify Login is present</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_login_button()">
+                <span>Then Admin should see login button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Verify the alignment of the login button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_login_button_on_the_centre_of_the_page()">
+                <span>Then Admin should see login button on the centre of the page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Verify input descriptive test in user field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_user_in_gray_color()">
+                <span>Then Admin should see user in gray color</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Verify input descriptive test in password field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_see_password_in_gray_color()">
+                <span>Then Admin should see password in gray color</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Validate login with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_valid_credentials_and_clicks_login_button()">
+                <span>When Admin enter valid credentials and clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_land_on_dashboard_page()">
+                <span>Then Admin should land on dashboard page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="90"><span class="badge log pass-bg mr-2">Pass</span>Validate login with invalid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_invalid_credentials_and_clicks_login_button()">
+                <span>And Admin enter invalid credentials and clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.error_message_please_check_username_password()">
+                <span>Then Error message please check username/password</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="97"><span class="badge log fail-bg mr-2">Fail</span>Validate login credentials with null username</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_value_only_in_password_and_clicks_login_button()">
+                <span>And Admin enter value only in password and clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.LoginStepDef.error_message_please_check_username_password()">
+                <span>Then Error message please check username/password</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='errormessage']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy46.getText(Unknown Source)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:286)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:176)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate login credentials with null username
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="104"><span class="badge log fail-bg mr-2">Fail</span>Validate login credentials with null password</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_value_only_in_username_and_clicks_login_button()">
+                <span>And Admin enter value only in username and clicks login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.LoginStepDef.error_message_please_check_username_password()">
+                <span>Then Error message please check username/password</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='errormessage']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy46.getText(Unknown Source)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:286)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:176)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate login credentials with null password
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>verify login button action through keyboard</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_valid_credentials_and_clicks_login_button_through_keyboard()">
+                <span>And Admin enter valid credentials and clicks login button through keyboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_land_on_dashboard_page()">
+                <span>Then Admin should land on dashboard page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>verify login button action through mouse</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_launch_the_browser()">
+                <span>Given Admin launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_gives_the_correct_lms_portal_url()">
+                <span>When Admin gives the correct LMS portal URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_is_in_home_page()">
+                <span>When Admin is in Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_enter_valid_credentials_and_clicks_login_button_through_mouse()">
+                <span>And Admin enter valid credentials and clicks login button through mouse</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginStepDef.admin_should_land_on_dashboard_page()">
+                <span>Then Admin should land on dashboard page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="125"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard</p>
+            <p class="text-sm">
+              <span>11:59:00 PM</span> / <span>00:00:50:104</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dashboard</h5>
+<span class='badge badge-success'>04.28.2024 11:59:00 PM</span>
+<span class='badge badge-danger'>04.28.2024 11:59:50 PM</span>
+<span class='badge badge-default'>00:00:50:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=125</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>Verify after login  admin lands on manage program as dashboard page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_manage_program_as_header()">
+                <span>Then admin should see manage program as header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>Verify broken link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.http_response_then_the_link_is_broken(java.lang.Integer)">
+                <span>Then HTTP response >= 400. Then the link is broken</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Verify LMS title</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_lms_learning_management_system_as_title()">
+                <span>Then admin should see LMS -Learning management system as title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>Verify  LMS title alignment</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_title_should_be_on_the_top_left_corner_of_page()">
+                <span>Then LMS title should be on the top left corner of page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>Validate navigation bar text</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_correct_spelling_in_navigation_bar_text()">
+                <span>Then admin should see correct spelling in navigation bar text</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="156"><span class="badge log pass-bg mr-2">Pass</span>Validate LMS title has correct spelling ang space</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_correct_spelling_and_space_in_lms_title()">
+                <span>Then admin should see correct spelling and space in LMS title</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="162"><span class="badge log pass-bg mr-2">Pass</span>Validate alignment for navigation bar</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_the_navigation_bar_text_on_the_top_right_side()">
+                <span>Then admin should see the navigation bar text on the top right side</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="168"><span class="badge log pass-bg mr-2">Pass</span>Validate navigation bar order  1st Program</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_program_in_the_1st_place()">
+                <span>Then admin should see program in the 1st place</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="174"><span class="badge log pass-bg mr-2">Pass</span>Validate navigation bar order  2nd Batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_batch_in_the_2nd_place()">
+                <span>Then admin should see batch in the 2nd place</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="180"><span class="badge log pass-bg mr-2">Pass</span>Validate navigation bar order 3rd User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_user_in_the_3rd_place()">
+                <span>Then admin should see user in the 3rd place</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Validate navigation bar order 4th Logout</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_see_logout_in_the_4th_place()">
+                <span>Then admin should see logout in the 4th place</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="192"><span class="badge log pass-bg mr-2">Pass</span>Verify Logout button function</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.lms_application_https()">
+                <span>Given LMS application https</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.valid_credentials_are_given_to_login()">
+                <span>When Valid credentials are given to login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_logins_in_successfully()">
+                <span>And admin logins in successfully and lands in Dashboard page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.Admin_click_Logout_button_on_navigation_bar()">
+                <span>When Admin click Logout button on navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DashboardStepDef.admin_should_land_on_login_in_page()">
+                <span>Then admin should land on login in page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="199"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Batch Page Validation Feature</p>
+            <p class="text-sm">
+              <span>11:59:50 PM</span> / <span>00:00:11:110</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Batch Page Validation Feature</h5>
+<span class='badge badge-success'>04.28.2024 11:59:50 PM</span>
+<span class='badge badge-danger'>04.29.2024 12:00:01 AM</span>
+<span class='badge badge-default'>00:00:11:110</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=199</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="200"><span class="badge log fail-bg mr-2">Fail</span>Validate landing in Batch page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.BatchSetpDef.admin_should_see_the_in_the_url(java.lang.String)">
+                <span>Then Admin should see the "Manage Batch" in the URL</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at pageObjectModel.BatchPage.batchUrlValidation(BatchPage.java:54)
+	at stepDefinitions.BatchSetpDef.admin_should_see_the_in_the_url(BatchSetpDef.java:38)
+	at ✽.Admin should see the "Manage Batch" in the URL(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/03batchValidation.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate landing in Batch page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="206"><span class="badge log pass-bg mr-2">Pass</span>Validate header in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_should_see_the_in_the_header(java.lang.String)">
+                <span>Then Admin should see the "Manage Batch" in the header</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="212"><span class="badge log pass-bg mr-2">Pass</span>Validate pagination in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_should_see_the_pagination_controls_under_the_data_table()">
+                <span>Then Admin should see the pagination controls under the data table</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="218"><span class="badge log pass-bg mr-2">Pass</span>Validate data table headers in the Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_should_see_the_data_table_with_headers_batch_name_batch_description_batch_status_no_of_classes_program_name_edit_delete()">
+                <span>Then Admin Should see the data table with headers Batch name, Batch Description,Batch Status, No. of classes, Program Name, Edit, Delete</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="224"><span class="badge log pass-bg mr-2">Pass</span>Validate Delete button in Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_should_be_able_to_see_the_icon_button_that_is_disabled(java.lang.String)">
+                <span>Then Admin should be able to see the "Delete" icon button that is disabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="230"><span class="badge log pass-bg mr-2">Pass</span>Validate "+ A New batch" in Batch Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_should_be_able_to_see_the_button(java.lang.String)">
+                <span>Then Admin should be able to see the "+ A New batch" button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="236"><span class="badge log pass-bg mr-2">Pass</span>Validate data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.each_row_in_the_data_table_should_have_a_checkbox()">
+                <span>Then Each row in the data table should have a checkbox</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="242"><span class="badge log pass-bg mr-2">Pass</span>Validate data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.each_row_in_the_data_table_should_have_a_edit_icon_that_is_enabled()">
+                <span>Then Each row in the data table should have a edit icon that is enabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="248"><span class="badge log pass-bg mr-2">Pass</span>Validate data rows</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.each_row_in_the_data_table_should_have_a_delete_icon_that_is_enabled()">
+                <span>Then Each row in the data table should have a delete icon that is enabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="254"><span class="badge log pass-bg mr-2">Pass</span>Validate pop up for adding batch</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.the_admin_logs_in_the_portal()">
+                <span>Given The Admin logs in the portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.clicks_on_from_navigation_bar(java.lang.String)">
+                <span>When clicks on "Batch" from navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_clicks_button(java.lang.String)">
+                <span>When Admin clicks "+ A New Batch" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.a_new_pop_up_with_batch_details_appears()">
+                <span>Then A new pop up with Batch details appears</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="261"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UserPageValidation Module</p>
+            <p class="text-sm">
+              <span>12:00:01 AM</span> / <span>00:00:01:717</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">UserPageValidation Module</h5>
+<span class='badge badge-success'>04.29.2024 12:00:01 AM</span>
+<span class='badge badge-danger'>04.29.2024 12:00:03 AM</span>
+<span class='badge badge-default'>00:00:01:717</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=261</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="262"><span class="badge log fail-bg mr-2">Fail</span>Validate landing in User page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_see_the_manage_user_in_the_url()">
+                <span>Then Admin should see the Manage User in the URL</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate landing in User page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded4.png' src="../embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="267"><span class="badge log fail-bg mr-2">Fail</span>Validate the heading</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_see_a_heading_with_text_manage_user_on_the_page()">
+                <span>Then Admin should see a heading with text Manage user on the page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate the heading
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded5.png' src="../embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="272"><span class="badge log fail-bg mr-2">Fail</span>Validate the text and pagination icon below the data table</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_see_the_text_as_showing_x_to_y_of_z_entries_along_with_pagination_icon_below_the_table_x_starting_record_number_on_that_page_y_ending_record_number_on_that_page_z_total_number_of_records()">
+                <span>Then Admin should see the text as Showing x to y of z entries along with Pagination icon below the table.x- starting record number on that page y-ending record number on that page z-Total number of records</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate the text and pagination icon below the data table
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded6.png' src="../embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="277"><span class="badge log fail-bg mr-2">Fail</span>Validate data table headers in the User Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_see_the_data_table_with_column_names_id_name_location_phone_number_edit_delete()">
+                <span>Then Admin Should see the data table with column names Id, Name, location, Phone Number, Edit/Delete</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate data table headers in the User Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded7.png' src="../embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="282"><span class="badge log fail-bg mr-2">Fail</span>Validating the default state of Delete button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_see_a_delete_button_on_the_top_left_hand_side_as_disabled()">
+                <span>Then Admin should see a Delete button on the top left hand side as Disabled</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validating the default state of Delete button
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded8.png' src="../embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="287"><span class="badge log fail-bg mr-2">Fail</span>Validate "+ A New user" button in User Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_be_able_to_see_the_a_new_user_button_above_the_data_table()">
+                <span>Then Admin should be able to see the A New User button above the data table</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate "+ A New user" button in User Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded9.png' src="../embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="292"><span class="badge log fail-bg mr-2">Fail</span>Validate "+ Assign staff"  button in User page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.BatchSetpDef.admin_is_on_dashboard_page_after_login()">
+                <span>Given Admin is on dashboard page after Login</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar()">
+                <span>When Admin clicks User from navigation bar</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
+Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pageObjectModel.UserPage.userbtn(UserPage.java:30)
+	at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
+	at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.UserStepDef.admin_should_be_able_to_see_the_assign_staff_button_above_the_data_table()">
+                <span>Then Admin should be able to see the  Assign staff button above the data table</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.hooks.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Validate "+ Assign staff"  button in User page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded10.png' src="../embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='264'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate landing in User page.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='269'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the heading.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='274'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the text and pagination icon below the data table.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='279'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate data table headers in the User Page.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='284'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validating the default state of Delete button.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='289'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ A New user" button in User Page.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='294'>When Admin clicks User from navigation bar</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ Assign staff" button in User page.When Admin clicks User from navigation bar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:59:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='204'>Then Admin should see the "Manage Batch" in the URL</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate landing in Batch page.Then Admin should see the "Manage Batch" in the URL</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='102'>Then Error message please check username/password</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null username.Then Error message please check username/password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='109'>Then Error message please check username/password</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null password.Then Error message please check username/password</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">39</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage04</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='218'>Validate data table headers in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data table headers in the Batch Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation7</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation7</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='292'>Validate "+ Assign staff" button in User page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ Assign staff" button in User page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='206'>Validate header in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate header in the Batch Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+</span>
+<p class="name">@1</p>
+<p class="duration text-sm">16 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@1</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Verify the text spelling in the page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the text spelling in the page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>Verify the company logo</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the company logo</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Validate sign in content</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate sign in content</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Verify text field is present</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text field is present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Verify text on the first text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the first text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Verify asterik next to user text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to user text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>Verify text on the second text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the second text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Verify asterik next to password text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to password text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='58'>Verify the alignment input field for the login</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the alignment input field for the login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>verify Login is present</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify Login is present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Verify the alignment of the login button</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the alignment of the login button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>Verify input descriptive test in user field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify input descriptive test in user field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='78'>Verify input descriptive test in password field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify input descriptive test in password field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='83'>Validate login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='90'>Validate login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='118'>verify login button action through mouse</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify login button action through mouse</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard8</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard8</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='168'>Validate navigation bar order 1st Program</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 1st Program</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard9</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard9</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='174'>Validate navigation bar order 2nd Batch</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 2nd Batch</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation1</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='262'>Validate landing in User page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate landing in User page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage09</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage09</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='248'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='180'>Validate navigation bar order 3rd User</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 3rd User</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@F</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@F</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Verify admin is able to land on home page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify admin is able to land on home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='97'>Validate login credentials with null username</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Validate login credentials with null password</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='111'>verify login button action through keyboard</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify login button action through keyboard</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage10</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage10</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='254'>Validate pop up for adding batch</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate pop up for adding batch</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard5</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard5</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='150'>Validate navigation bar text</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar text</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@login1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify admin is able to land on home page with invalid URL</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify admin is able to land on home page with invalid URL</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Batch_Module1</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Batch_Module1</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:59:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='200'>Validate landing in Batch page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate landing in Batch page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='206'>Validate header in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate header in the Batch Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='212'>Validate pagination in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate pagination in the Batch Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='218'>Validate data table headers in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data table headers in the Batch Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='224'>Validate Delete button in Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate Delete button in Batch Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='230'>Validate "+ A New batch" in Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate "+ A New batch" in Batch Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='236'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='242'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='248'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='254'>Validate pop up for adding batch</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate pop up for adding batch</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard12</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='192'>Verify Logout button function</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify Logout button function</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage06</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage06</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='230'>Validate "+ A New batch" in Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate "+ A New batch" in Batch Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@login666</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login666</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Verify admin is able to land on home page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify admin is able to land on home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage08</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage08</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='242'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@login2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify for broken link</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify for broken link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard3</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard3</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='138'>Verify LMS title</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify LMS title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard7</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard7</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='162'>Validate alignment for navigation bar</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate alignment for navigation bar</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='186'>Validate navigation bar order 4th Logout</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 4th Logout</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Verify the text spelling in the page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the text spelling in the page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>Verify the company logo</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the company logo</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Validate sign in content</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate sign in content</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Verify text field is present</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text field is present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Verify text on the first text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the first text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Verify asterik next to user text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to user text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>Verify text on the second text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the second text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Verify asterik next to password text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to password text</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage05</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage05</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='224'>Validate Delete button in Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate Delete button in Batch Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation2</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='267'>Validate the heading</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the heading</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard4</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='144'>Verify LMS title alignment</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify LMS title alignment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>20</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@HomePage</p>
+<p class="duration text-sm">22 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HomePage</h4>
+<span status="pass" class='badge log pass-bg'>20 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify admin is able to land on home page with invalid URL</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify admin is able to land on home page with invalid URL</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Verify for broken link</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify for broken link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Verify admin is able to land on home page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify admin is able to land on home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Verify the text spelling in the page</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the text spelling in the page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>Verify the company logo</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the company logo</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Validate sign in content</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate sign in content</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Verify text field is present</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text field is present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>Verify text on the first text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the first text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Verify asterik next to user text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to user text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>Verify text on the second text field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify text on the second text field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>Verify asterik next to password text</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify asterik next to password text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='58'>Verify the alignment input field for the login</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the alignment input field for the login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>verify Login is present</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify Login is present</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Verify the alignment of the login button</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify the alignment of the login button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>Verify input descriptive test in user field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify input descriptive test in user field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='78'>Verify input descriptive test in password field</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Verify input descriptive test in password field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='83'>Validate login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='90'>Validate login with invalid credentials</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login with invalid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='97'>Validate login credentials with null username</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:58:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Validate login credentials with null password</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.Validate login credentials with null password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='111'>verify login button action through keyboard</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify login button action through keyboard</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:58:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='118'>verify login button action through mouse</a>
+<div class="">
+<span class="badge badge-default">Login page Validation.verify login button action through mouse</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@userPageModule</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@userPageModule</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='262'>Validate landing in User page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate landing in User page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:01 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='267'>Validate the heading</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the heading</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='272'>Validate the text and pagination icon below the data table</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the text and pagination icon below the data table</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='277'>Validate data table headers in the User Page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate data table headers in the User Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='282'>Validating the default state of Delete button</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validating the default state of Delete button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='287'>Validate "+ A New user" button in User Page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ A New user" button in User Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='292'>Validate "+ Assign staff" button in User page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ Assign staff" button in User page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard6</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard6</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='156'>Validate LMS title has correct spelling ang space</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate LMS title has correct spelling ang space</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='126'>Verify after login admin lands on manage program as dashboard page</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify after login admin lands on manage program as dashboard page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@BatchPage01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage01</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:59:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='200'>Validate landing in Batch page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate landing in Batch page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation3</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation3</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='272'>Validate the text and pagination icon below the data table</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate the text and pagination icon below the data table</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation4</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='277'>Validate data table headers in the User Page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate data table headers in the User Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation5</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation5</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='282'>Validating the default state of Delete button</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validating the default state of Delete button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@dashboard2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='132'>Verify broken link</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify broken link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Userpagevalidation6</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Userpagevalidation6</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:00:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='287'>Validate "+ A New user" button in User Page</a>
+<div class="">
+<span class="badge badge-default">UserPageValidation Module.Validate "+ A New user" button in User Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>12</span>
+</span>
+<p class="name">@dashboard</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@dashboard</h4>
+<span status="pass" class='badge log pass-bg'>12 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='126'>Verify after login admin lands on manage program as dashboard page</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify after login admin lands on manage program as dashboard page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='132'>Verify broken link</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify broken link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='138'>Verify LMS title</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify LMS title</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='144'>Verify LMS title alignment</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify LMS title alignment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='150'>Validate navigation bar text</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar text</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='156'>Validate LMS title has correct spelling ang space</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate LMS title has correct spelling ang space</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='162'>Validate alignment for navigation bar</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate alignment for navigation bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='168'>Validate navigation bar order 1st Program</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 1st Program</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='174'>Validate navigation bar order 2nd Batch</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 2nd Batch</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='180'>Validate navigation bar order 3rd User</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 3rd User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='186'>Validate navigation bar order 4th Logout</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Validate navigation bar order 4th Logout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='125' id='192'>Verify Logout button function</a>
+<div class="">
+<span class="badge badge-default">Dashboard.Verify Logout button function</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='212'>Validate pagination in the Batch Page</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate pagination in the Batch Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@BatchPage07</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BatchPage07</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:59:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='199' id='236'>Validate data rows</a>
+<div class="">
+<span class="badge badge-default">Batch Page Validation Feature.Validate data rows</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 28, 2024 11:58:18 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 29, 2024 12:00:03 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='75%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>41</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='19%'><b>10</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>183</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>10</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login page Validation":34.575,"Dashboard":50.104,"Batch Page Validation Feature":11.11,"UserPageValidation Module":1.717
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@BatchPage04</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation7</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@BatchPage02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@1</td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@BatchPage09</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@F</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@BatchPage10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@login1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Batch_Module1</td>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>@dashboard12</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage06</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@login666</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage08</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@login2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard7</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@login</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage05</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@dashboard4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@HomePage</td>
+<td>20</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>90.909%</td>
+</tr>
+<tr>
+<td>@userPageModule</td>
+<td>0</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@dashboard6</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@dashboard1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage01</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@dashboard2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Userpagevalidation6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@dashboard</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BatchPage07</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 41,
+failChild: 10,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 183,
+failGrandChild: 10,
+warningGrandChild: 0,
+skipGrandChild: 7,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

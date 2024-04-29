@@ -1,10 +1,8 @@
 package pageObjectModel;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,21 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import net.sourceforge.tess4j.ITesseract;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
 import utilities.ConfigReader;
 import utilities.DriverBase;
 import utilities.ExcelUtils;
-import com.aspose.ocr.AsposeOCR;
-import com.aspose.ocr.AsposeOCRException;
-import com.aspose.ocr.InputType;
-import com.aspose.ocr.Language;
-import com.aspose.ocr.License;
-import com.aspose.ocr.OcrInput;
-import com.aspose.ocr.RecognitionResult;
-import com.aspose.ocr.RecognitionSettings;
-
 public class LoginPage {
 	
 	public static ConfigReader reader = new ConfigReader();
@@ -177,7 +163,7 @@ public class LoginPage {
 		Assert.assertEquals(imgLogo.isDisplayed(), true);
 	}
 
-	public void CheckHeading() throws AsposeOCRException {
+	public void CheckHeading()  {
 //		AsposeOCR api = new AsposeOCR();
 //		RecognitionSettings recognitionSettings = new RecognitionSettings();
 //		// Add image to the recognition batch
@@ -199,17 +185,17 @@ public class LoginPage {
 		//Assert.assertEquals(text.equalsIgnoreCase("LMS - Learning Management System"), true);
 		
 		
-		com.aspose.ocr.AsposeOCR api = new com.aspose.ocr.AsposeOCR();
-		com.aspose.ocr.OcrInput input = new com.aspose.ocr.OcrInput(com.aspose.ocr.InputType.SingleImage);
-		input.add("C:/Users/manas/Desktop/LMS-loog.jpg");
-		ArrayList<RecognitionResult> results = api.RecognizeStreetPhoto(input);
-
-		for (RecognitionResult res : results) {
-		    System.out.println(res.recognitionText);
-		}
+//		com.aspose.ocr.AsposeOCR api = new com.aspose.ocr.AsposeOCR();
+//		com.aspose.ocr.OcrInput input = new com.aspose.ocr.OcrInput(com.aspose.ocr.InputType.SingleImage);
+//		input.add("C:/Users/manas/Desktop/LMS-loog.jpg");
+//		ArrayList<RecognitionResult> results = api.RecognizeStreetPhoto(input);
+//
+//		for (RecognitionResult res : results) {
+//		    System.out.println(res.recognitionText);
+//		}
 	}
 	
-	public void CheckCompanyName() throws TesseractException {
+	public void CheckCompanyName() {
 //		File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //		Tesseract image = new Tesseract();
 //		image.setDatapath("Location for TessData Folder");
@@ -217,10 +203,10 @@ public class LoginPage {
 //		String text = image.doOCR(screenshot);
 //		System.out.println("text from image : " + text);
 //		Assert.assertEquals(text.equalsIgnoreCase("Numpy Ninja"), true);
-		ITesseract inst = new Tesseract();
+		//ITesseract inst = new Tesseract();
 		//inst.setDatapath("C:\\Users\\manas\\Desktop\\LMS-loog.jpg");
-		String result = inst.doOCR(new File("C:\\Users\\manas\\Desktop\\LMS-logo.jpg"));
-		System.out.println("result ::::: " + result);
+//		String result = inst.doOCR(new File("C:\\Users\\manas\\Desktop\\LMS-logo.jpg"));
+//		System.out.println("result ::::: " + result);
 	}
 	
 	public void CheckParaContent() {
