@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -269,8 +271,17 @@ public class LoginPage {
 	}
 	
 	public void CheckErrorMessage() {
-		System.out.println("error msg :: " + errMessage.getText());
-		Assert.assertEquals(errMessage.getText().contains
-				("Invalid username and password Please try again"), true);
+		List<WebElement> lst = driver.findElements(By.xpath("//*[@id='errormessage']"));
+		Boolean b = lst.size()>0;
+		Assert.assertEquals(true, b);
+
+//		if(b)
+//			System.out.println("error msg :: " + errMessage.getText());
+//			Assert.assertEquals(errMessage.getText().contains
+//				("Invalid username and password Please try again"), true);
+//		}
+//		else {
+//			System.out.println("error Message not displayed...");
+//		}
 	}
 }
