@@ -21,6 +21,7 @@ public class DriverBase {
 		reader = new ConfigReader();
 		browser = reader.getBrowser();
 
+		
 		if (browser.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();

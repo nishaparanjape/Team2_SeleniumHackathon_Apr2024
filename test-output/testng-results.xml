@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="51" passed="41" failed="10" skipped="0">
+<testng-results ignored="0" total="50" passed="48" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-28T23:58:18 EDT" name="Suite" finished-at="2024-04-29T00:00:09 EDT" duration-ms="111002">
+  <suite started-at="2024-04-29T21:37:29 EDT" name="Default suite" finished-at="2024-04-29T21:40:22 EDT" duration-ms="172967">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-28T23:58:18 EDT" name="Test" finished-at="2024-04-29T00:00:09 EDT" duration-ms="111002">
+    <test started-at="2024-04-29T21:37:29 EDT" name="Default test" finished-at="2024-04-29T21:40:22 EDT" duration-ms="172967">
       <class name="testRunner.TestRun">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:18 EDT" name="setUpClass" finished-at="2024-04-28T23:58:25 EDT" duration-ms="7020" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:29 EDT" name="setUpClass" finished-at="2024-04-29T21:37:34 EDT" duration-ms="5667" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59cbeaee]]>
+                <![CDATA[org.testng.TestRunner@5b1f32e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:25 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:28 EDT" duration-ms="3196" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:34 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:42 EDT" duration-ms="7991" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:39 EDT" duration-ms="10714" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:53 EDT" duration-ms="10666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:39 EDT" duration-ms="537" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:54 EDT" duration-ms="720" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:40 EDT" duration-ms="662" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:55 EDT" duration-ms="837" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:41 EDT" duration-ms="481" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:55 EDT" duration-ms="498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:41 EDT" duration-ms="384" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:56 EDT" duration-ms="486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:41 EDT" duration-ms="423" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:56 EDT" duration-ms="478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:42 EDT" duration-ms="447" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:57 EDT" duration-ms="490" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:42 EDT" duration-ms="386" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:57 EDT" duration-ms="481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:43 EDT" duration-ms="584" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:58 EDT" duration-ms="500" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:43 EDT" duration-ms="467" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:58 EDT" duration-ms="482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:44 EDT" duration-ms="408" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:59 EDT" duration-ms="528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:44 EDT" duration-ms="312" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:37:59 EDT" duration-ms="437" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +229,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:44 EDT" duration-ms="317" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:37:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:00 EDT" duration-ms="520" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:45 EDT" duration-ms="350" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:00 EDT" duration-ms="496" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +261,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:45 EDT" duration-ms="367" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:01 EDT" duration-ms="522" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,7 +277,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:45 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:46 EDT" duration-ms="759" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:01 EDT" duration-ms="892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +293,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:47 EDT" duration-ms="779" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:02 EDT" duration-ms="820" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,7 +309,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:53 EDT" duration-ms="6060" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:09 EDT" duration-ms="6235" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -322,53 +322,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: //*[@id='errormessage']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
+              <![CDATA[expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='errormessage']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy46.getText(Unknown Source)
-at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:286)
-at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:176)
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1066)
+at org.testng.Assert.assertEquals(Assert.java:1106)
+at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
 at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:58 EDT" duration-ms="5817" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:14 EDT" duration-ms="5779" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -381,53 +356,28 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: //*[@id='errormessage']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
+              <![CDATA[expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='errormessage']
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, findElement {using=xpath, value=//*[@id='errormessage']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy46.getText(Unknown Source)
-at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:286)
-at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:176)
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1066)
+at org.testng.Assert.assertEquals(Assert.java:1106)
+at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
 at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:58:59 EDT" duration-ms="596" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:15 EDT" duration-ms="888" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -443,7 +393,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:58:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:00 EDT" duration-ms="785" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:15 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:16 EDT" duration-ms="743" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -459,7 +409,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:00 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:04 EDT" duration-ms="3895" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:20 EDT" duration-ms="3843" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -475,7 +425,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:12 EDT" duration-ms="8721" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:29 EDT" duration-ms="8760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -491,7 +441,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:16 EDT" duration-ms="3830" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:32 EDT" duration-ms="3698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -507,7 +457,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:20 EDT" duration-ms="3691" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:36 EDT" duration-ms="3733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -523,7 +473,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:24 EDT" duration-ms="3712" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:40 EDT" duration-ms="3732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -539,7 +489,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:28 EDT" duration-ms="4020" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:43 EDT" duration-ms="3664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -555,7 +505,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:31 EDT" duration-ms="3724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:47 EDT" duration-ms="3681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -571,7 +521,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:35 EDT" duration-ms="3662" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:51 EDT" duration-ms="3713" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -587,7 +537,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:35 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:39 EDT" duration-ms="3657" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:51 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:54 EDT" duration-ms="3681" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -603,7 +553,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:39 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:42 EDT" duration-ms="3683" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:38:58 EDT" duration-ms="3679" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -619,7 +569,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:46 EDT" duration-ms="3655" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:38:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:02 EDT" duration-ms="3680" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -635,7 +585,7 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:50 EDT" duration-ms="3850" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:06 EDT" duration-ms="3964" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -651,183 +601,23 @@ at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:51 EDT" duration-ms="1099" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:06 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:13 EDT" duration-ms="7317" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate landing in Batch page"]]>
+                <![CDATA["Login"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at pageObjectModel.BatchPage.batchUrlValidation(BatchPage.java:54)
-at stepDefinitions.BatchSetpDef.admin_should_see_the_in_the_url(BatchSetpDef.java:38)
-at ✽.Admin should see the "Manage Batch" in the URL(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/03batchValidation.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:51 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:52 EDT" duration-ms="947" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate header in the Batch Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
+                <![CDATA["Dashboard"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:52 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:53 EDT" duration-ms="1196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate pagination in the Batch Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:54 EDT" duration-ms="1077" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate data table headers in the Batch Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:55 EDT" duration-ms="1069" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate Delete button in Batch Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:55 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:56 EDT" duration-ms="961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate "+ A New batch" in Batch Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:57 EDT" duration-ms="1107" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate data rows"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:58 EDT" duration-ms="980" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate data rows"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:58 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-28T23:59:59 EDT" duration-ms="1026" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate data rows"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-28T23:59:59 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:01 EDT" duration-ms="1634" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate pop up for adding batch"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Batch Page Validation Feature"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:01 EDT" duration-ms="289" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:16 EDT" duration-ms="3366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -836,52 +626,14 @@ at ✽.Admin should see the "Manage Batch" in the URL(file:///C:/Numpy_Ninja_202
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:02 EDT" duration-ms="213" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:17 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:20 EDT" duration-ms="3318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -890,52 +642,14 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:02 EDT" duration-ms="248" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:23 EDT" duration-ms="3303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -944,52 +658,14 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:02 EDT" duration-ms="232" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:26 EDT" duration-ms="3318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -998,52 +674,14 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:02 EDT" duration-ms="209" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:30 EDT" duration-ms="3288" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1052,52 +690,14 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:03 EDT" duration-ms="298" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:30 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:33 EDT" duration-ms="3294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1106,52 +706,14 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T00:00:03 EDT" duration-ms="218" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:36 EDT" duration-ms="3314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1160,56 +722,146 @@ at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_S
             </param>
             <param index="1">
               <value>
-                <![CDATA["UserPageValidation Module"]]>
+                <![CDATA["User page1"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span class="mat-button-wrapper"> is not clickable at point (1157,32) because another element <div class="ng-tns-c132-6 p-dialog-mask p-component-overlay p-dialog-mask-scrollblocker ng-star-inserted"> obscures it
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f0b7a54b-9a78-499e-b70b-e240dc5492d8, clickElement {id=82be5e3f-7af0-43a5-9808-2046d64d9071}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:24110, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43168, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:24110/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on WINDOWS (f0b7a54b-9a78-499e-b70b-e240dc5492d8)] -> xpath: //*[text()='User']]
-Session ID: f0b7a54b-9a78-499e-b70b-e240dc5492d8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at pageObjectModel.UserPage.userbtn(UserPage.java:30)
-at stepDefinitions.UserStepDef.admin_clicks_user_from_navigation_bar(UserStepDef.java:31)
-at ✽.Admin clicks User from navigation bar(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08UserValidation.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRun@3bcd05cb]" started-at="2024-04-29T00:00:03 EDT" name="tearDownClass" finished-at="2024-04-29T00:00:09 EDT" duration-ms="6051" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:36 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:40 EDT" duration-ms="3294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate + Assign Student  button in User page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:43 EDT" duration-ms="3326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate search box in User page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:43 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:46 EDT" duration-ms="3343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate header count and column count in each row on the data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:46 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:50 EDT" duration-ms="3310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Check box on the data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:50 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:53 EDT" duration-ms="3287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify edit icon on the data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:39:56 EDT" duration-ms="3321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify  delete icon on the data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:39:56 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:40:01 EDT" duration-ms="4565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:40:01 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-29T21:40:10 EDT" duration-ms="9578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User page1"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRun@1f9f6368]" started-at="2024-04-29T21:40:10 EDT" name="tearDownClass" finished-at="2024-04-29T21:40:22 EDT" duration-ms="11245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunner.TestRun -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

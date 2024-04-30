@@ -12,7 +12,7 @@ import utilities.LoggerLoad;
 
 public class LoginStepDef {
 	LoginPage login = new LoginPage();
-	
+	 
 	@Given("Admin launch the browser")
 	public void admin_launch_the_browser() {
 	  //   

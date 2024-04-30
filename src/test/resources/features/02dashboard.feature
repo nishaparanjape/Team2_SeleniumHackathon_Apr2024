@@ -55,3 +55,10 @@ Feature: Dashboard
 	Scenario: Verify Logout button function
 	When Admin click Logout button on navigation bar
 	Then admin should land on login in page
+	
+	@dashboard13
+	Scenario: Login
+	Given LMS application https	
+	When Valid credentials are given to login
+	And admin logins in successfully and lands in Dashboard page
+	

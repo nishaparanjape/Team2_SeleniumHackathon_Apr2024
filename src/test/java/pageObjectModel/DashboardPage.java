@@ -92,6 +92,7 @@ public class DashboardPage {
 		}
 	}
 
+	
 	public void enterPassword() {
 		//String pass = reader.getPassword();
 		String filePath =  reader.getExcelPath();
@@ -174,6 +175,7 @@ public class DashboardPage {
   	 		System.out.println("LoginPage is not Displayed");
   	 	}
 	}
+	
 	      
       public void validateBatch() {
     	  boolean batchvalidation = validatebatch.isDisplayed();

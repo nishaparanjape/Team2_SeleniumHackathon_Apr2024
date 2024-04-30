@@ -22,6 +22,7 @@ public class ConfigReader {
 		return path;
 	}
 	
+	
 //	public String getUrl() {
 //		String url = prop.getProperty("lmsUrl");
 //		return url;

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>48/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 28 23:39:29 EDT 2024</td>
+<td>Started on:</td><td>Mon Apr 29 21:37:29 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28897 ms)</td>
+<tr><td>Total time:</td><td>172 seconds (172967 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,67 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login credentials with null username", "Login page Validation"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1106)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2094728618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2094728618'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1106)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
+</pre></div></td>
+<td>6</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login credentials with null password", "Login page Validation"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1106)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1800892408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1800892408'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1066)
+	at org.testng.Assert.assertEquals(Assert.java:1106)
+	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
+	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
+	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
+</pre></div></td>
+<td>5</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +137,245 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate sign in content", "Login page Validation"</td>
 <td></td>
-<td>19</td>
-<td>testRunner.TestRun@730d2164</td></tr>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  delete icon on the data table", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d", "User page1"</td>
+<td></td>
+<td>9</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify admin is able to land on home page", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text field is present", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify input descriptive test in password field", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify login button action through keyboard", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate LMS title has correct spelling ang space", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logout button function", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate search box in User page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text spelling in the page", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the heading", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify broken link", "Dashboard"</td>
+<td></td>
+<td>8</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify edit icon on the data table", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d", "User page1"</td>
+<td></td>
+<td>4</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate header count and column count in each row on the data table", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify admin is able to land on home page with invalid URL", "Login page Validation"</td>
+<td></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text on the first text field", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order 4th Logout", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate alignment for navigation bar", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify after login  admin lands on manage program as dashboard page", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login", "Dashboard"</td>
+<td></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with invalid credentials", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar text", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Login is present", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order  1st Program", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alignment input field for the login", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify input descriptive test in user field", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with valid credentials", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Check box on the data table", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate "+ A New user" button in User Page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text on the second text field", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  LMS title alignment", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order 3rd User", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the default state of Delete button", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate "+ Assign staff"  button in User page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify LMS title", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate landing in User page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data table headers in the User Page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify asterik next to user text", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the company logo", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order  2nd Batch", "Dashboard"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the text and pagination icon below the data table", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate + Assign Student  button in User page", "User page1"</td>
+<td></td>
+<td>3</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alignment of the login button", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify for broken link", "Login page Validation"</td>
+<td></td>
+<td>10</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify login button action through mouse", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify asterik next to password text", "Login page Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
 </table><p>
 </body>
 </html>
