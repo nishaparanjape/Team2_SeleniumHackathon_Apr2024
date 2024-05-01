@@ -25,10 +25,11 @@ public class hooks {
 	
 	@AfterAll
 	public static void TearDown() {
-		//driverbase.closeDriver();
-		//System.out.println("_________________________________DRIVER CLOSED__________________________");
-		//driverbase.quitDriver();
+		driverbase.closeDriver();
+		System.out.println("_________________________________DRIVER CLOSED__________________________");
+		driverbase.quitDriver();
 	}
+	
 	
 	@After
 	public void takeScreenshotOnFailure(Scenario scenario) throws IOException {

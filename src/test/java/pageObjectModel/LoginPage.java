@@ -64,7 +64,6 @@ public class LoginPage {
 				(pageSource.contains("not") && pageSource.contains("found")));
 	}
 
-
 	
 	public int getHTTPResponseCode() throws IOException {
     	int responseCode = 0;
