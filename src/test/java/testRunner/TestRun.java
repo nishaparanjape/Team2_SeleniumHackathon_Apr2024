@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class) //Junit execution
 @CucumberOptions(
 	plugin = {"pretty", 
-				"html:target/Team2_SeleniumHackathon_Apr2024.html", 
+				"html:Reports/Team2_SeleniumHackathon_Apr2024.html", 
 				"junit:target/cucumber-reports/Cucumber.xml", 
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
