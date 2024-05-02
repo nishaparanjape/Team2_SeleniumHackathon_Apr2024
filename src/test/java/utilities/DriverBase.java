@@ -42,7 +42,7 @@ public class DriverBase {
 		return driver;
 	}
 
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	
