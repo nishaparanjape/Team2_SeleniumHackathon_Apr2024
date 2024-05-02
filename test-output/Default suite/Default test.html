@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>48/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/16/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 29 21:37:29 EDT 2024</td>
+<td>Started on:</td><td>Wed May 01 23:42:06 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>172 seconds (172967 ms)</td>
+<tr><td>Total time:</td><td>210 seconds (210147 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,61 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.TestRun.tearDownClass()'><b>tearDownClass</b><br>Test class: testRunner.TestRun</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1311842975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1311842975'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>16</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,56 +131,772 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login credentials with null username", "Login page Validation"</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1396320248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396320248'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if you get error message when mandatory fields are erased -NoOfClasses", "Edit Batch features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errNoOfClasses(Batch_PageObjects.java:452)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_no_of_classes_text_field(Batch_StepDefinitions.java:264)
+	at ✽.Admin gets a Error message alert near the no of classes text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1525711410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1525711410'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errNoOfClasses(Batch_PageObjects.java:452)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_no_of_classes_text_field(Batch_StepDefinitions.java:264)
+	at ✽.Admin gets a Error message alert near the no of classes text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:49)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace304060411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304060411'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if description is optional field while creating new batch", "Add New Batch Feature Validation"</td>
+<td><div><pre>java.lang.AssertionError: expected [qawarriors7] but found [QAWarriors7]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1106)
-	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
-	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
-	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2094728618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2094728618'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at pageObjectModel.Batch_PageObjects.isNewBatchAdded(Batch_PageObjects.java:389)
+	at stepDefinitions.Batch_StepDefinitions.the_newly_added_batch_should_be_present_in_the_data_table_in_manage_batch_page(Batch_StepDefinitions.java:172)
+	at ✽.The newly added batch should be present in the data table in Manage Batch page st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:39)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1323407208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1323407208'><pre>java.lang.AssertionError: expected [qawarriors7] but found [QAWarriors7]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1577)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1106)
-	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
-	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
-	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:97)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at pageObjectModel.Batch_PageObjects.isNewBatchAdded(Batch_PageObjects.java:389)
+	at stepDefinitions.Batch_StepDefinitions.the_newly_added_batch_should_be_present_in_the_data_table_in_manage_batch_page(Batch_StepDefinitions.java:172)
+	at ✽.The newly added batch should be present in the data table in Manage Batch page st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:39)
+</pre></div></td>
+<td>10</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the fields are updated with valid values -Update the Description", "Edit Batch features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //tbody/tr[1]/td[text()=&apos;level 1&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//tbody/tr[1]/td[text()=&apos;level 1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.updatedDescription(Batch_PageObjects.java:543)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_description_should_appear_on_the_data_table(Batch_StepDefinitions.java:299)
+	at ✽.The updated Description -&quot;level 1&quot; should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1121345532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1121345532'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //tbody/tr[1]/td[text()=&apos;level 1&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//tbody/tr[1]/td[text()=&apos;level 1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.updatedDescription(Batch_PageObjects.java:543)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_description_should_appear_on_the_data_table(Batch_StepDefinitions.java:299)
+	at ✽.The updated Description -&quot;level 1&quot; should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:19)
+</pre></div></td>
+<td>15</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the fields are updated -Update the Status", "Edit Batch features"</td>
+<td><div><pre>java.lang.AssertionError: expected [INACTIVE] but found [ACTIVE]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at pageObjectModel.Batch_PageObjects.updatedStatus(Batch_PageObjects.java:607)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_status_should_appear_on_the_data_table(Batch_StepDefinitions.java:327)
+	at ✽.The updated Status should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:31)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1244424614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1244424614'><pre>java.lang.AssertionError: expected [INACTIVE] but found [ACTIVE]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at pageObjectModel.Batch_PageObjects.updatedStatus(Batch_PageObjects.java:607)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_status_should_appear_on_the_data_table(Batch_StepDefinitions.java:327)
+	at ✽.The updated Status should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:31)
+</pre></div></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate accept alert", "Delete Batch/Batches features"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at pageObjectModel.Batch_PageObjects.isBatchAbsent(Batch_PageObjects.java:693)
+	at stepDefinitions.Batch_StepDefinitions.batch_deleted_alert_pops_and_batch_is_no_more_available_in_data_table(Batch_StepDefinitions.java:417)
+	at ✽.Batch deleted alert pops and batch is no more available in data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace881534688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace881534688'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at pageObjectModel.Batch_PageObjects.isBatchAbsent(Batch_PageObjects.java:693)
+	at stepDefinitions.Batch_StepDefinitions.batch_deleted_alert_pops_and_batch_is_no_more_available_in_data_table(Batch_StepDefinitions.java:417)
+	at ✽.Batch deleted alert pops and batch is no more available in data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:19)
 </pre></div></td>
 <td>6</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login credentials with null password", "Login page Validation"</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1106)
-	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
-	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
-	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1800892408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1800892408'><pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1066)
-	at org.testng.Assert.assertEquals(Assert.java:1106)
-	at pageObjectModel.LoginPage.CheckErrorMessage(LoginPage.java:278)
-	at stepDefinitions.LoginStepDef.error_message_please_check_username_password(LoginStepDef.java:178)
-	at ✽.Error message please check username/password(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/01login.feature:103)
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for multi row delete", "Delete Batch/Batches features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.selectMultipleCheckBox(Batch_PageObjects.java:712)
+	at stepDefinitions.Batch_StepDefinitions.two_or_more_checkboxes_or_row_is_selected(Batch_StepDefinitions.java:488)
+	at ✽.Two or more checkboxes or row is selected st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:40)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1754599205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1754599205'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.selectMultipleCheckBox(Batch_PageObjects.java:712)
+	at stepDefinitions.Batch_StepDefinitions.two_or_more_checkboxes_or_row_is_selected(Batch_StepDefinitions.java:488)
+	at ✽.Two or more checkboxes or row is selected st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:40)
 </pre></div></td>
-<td>5</td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate reject alert", "Delete Batch/Batches features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.isBatchPresent(Batch_PageObjects.java:679)
+	at stepDefinitions.Batch_StepDefinitions.batch_is_still_listed_in_data_table(Batch_StepDefinitions.java:441)
+	at ✽.Batch is still listed in data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace866237328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace866237328'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.isBatchPresent(Batch_PageObjects.java:679)
+	at stepDefinitions.Batch_StepDefinitions.batch_is_still_listed_in_data_table(Batch_StepDefinitions.java:441)
+	at ✽.Batch is still listed in data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:25)
+</pre></div></td>
+<td>6</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace13193469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13193469'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for single row delete", "Delete Batch/Batches features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.selectCheckBox(Batch_PageObjects.java:706)
+	at stepDefinitions.Batch_StepDefinitions.one_of_the_checkbox_row_is_selected(Batch_StepDefinitions.java:463)
+	at ✽.One of the checkbox or row is selected st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace477222660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477222660'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//td[text()=&apos;qawarriors&apos;]/../td/p-tablecheckbox/div}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.selectCheckBox(Batch_PageObjects.java:706)
+	at stepDefinitions.Batch_StepDefinitions.one_of_the_checkbox_row_is_selected(Batch_StepDefinitions.java:463)
+	at ✽.One of the checkbox or row is selected st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/11batchDelete.feature:34)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if description field is optional in update", "Edit Batch features"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //tbody/tr[1]/td[text()=&apos;level 1&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//tbody/tr[1]/td[text()=&apos;level 1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.updatedDescription1(Batch_PageObjects.java:613)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_batch_details_should_appear_on_the_data_table(Batch_StepDefinitions.java:369)
+	at ✽.The updated batch details should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:55)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1810342513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810342513'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //tbody/tr[1]/td[text()=&apos;level 1&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//tbody/tr[1]/td[text()=&apos;level 1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.updatedDescription1(Batch_PageObjects.java:613)
+	at stepDefinitions.Batch_StepDefinitions.the_updated_batch_details_should_appear_on_the_data_table(Batch_StepDefinitions.java:369)
+	at ✽.The updated batch details should appear on the data table st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/10batchEdit.feature:55)
+</pre></div></td>
+<td>12</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace787889005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace787889005'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace323928307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace323928307'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate landing in Batch page", "Batch Page Validation Feature"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at pageObjectModel.Batch_PageObjects.batchUrlValidation(Batch_PageObjects.java:130)
+	at stepDefinitions.Batch_StepDefinitions.admin_should_see_the_in_the_url(Batch_StepDefinitions.java:44)
+	at ✽.Admin should see the &quot;Manage Batch&quot; in the URL st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08batchValidation.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1626288305", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1626288305'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at pageObjectModel.Batch_PageObjects.batchUrlValidation(Batch_PageObjects.java:130)
+	at stepDefinitions.Batch_StepDefinitions.admin_should_see_the_in_the_url(Batch_StepDefinitions.java:44)
+	at ✽.Admin should see the &quot;Manage Batch&quot; in the URL st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/08batchValidation.feature:11)
+</pre></div></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error messages for invalid values in fields", "Add New Batch Feature Validation"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1485182201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1485182201'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //small[@id=&apos;text-danger&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fefb3e1d-81fe-4f47-9265-1a780fe991c6, findElement {using=xpath, value=//small[@id=&apos;text-danger&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 125.0.2, moz:accessibilityChecks: false, moz:buildID: 20240419144423, moz:debuggerAddress: 127.0.0.1:37644, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13132, moz:profile: C:\Users\manas\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37644/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fefb3e1d-81fe-4f47-9265-1a780fe991c6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObjectModel.Batch_PageObjects.errTextField(Batch_PageObjects.java:421)
+	at stepDefinitions.Batch_StepDefinitions.admin_gets_a_error_message_alert_near_the_text_field(Batch_StepDefinitions.java:194)
+	at ✽.Admin gets a Error message alert near the text field st(file:///C:/Numpy_Ninja_2024/Team2_Selenium_Apr2024/src/test/resources/features/09batchAdd.feature:50)
+</pre></div></td>
+<td>7</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -137,244 +908,139 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate sign in content", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate pop up for adding batch", "Batch Page Validation Feature"</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  delete icon on the data table", "User page1"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate header in the Batch Page", "Batch Page Validation Feature"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table when description is blank", "Add New Batch Feature Validation"</td>
+<td></td>
+<td>2</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if pop up include the field- Name as text box", "Add New Batch Feature Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data table headers in the Batch Page", "Batch Page Validation Feature"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table when no of classes is blank", "Add New Batch Feature Validation"</td>
 <td></td>
 <td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d", "User page1"</td>
-<td></td>
-<td>9</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify admin is able to land on home page", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text field is present", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify input descriptive test in password field", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify login button action through keyboard", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate LMS title has correct spelling ang space", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logout button function", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate search box in User page", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text spelling in the page", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the heading", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify broken link", "Dashboard"</td>
-<td></td>
-<td>8</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify edit icon on the data table", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin is on dashboard page after Login and clicks User on the navigation bar and search user by name-d", "User page1"</td>
-<td></td>
-<td>4</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate header count and column count in each row on the data table", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify admin is able to land on home page with invalid URL", "Login page Validation"</td>
-<td></td>
-<td>7</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text on the first text field", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order 4th Logout", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate alignment for navigation bar", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify after login  admin lands on manage program as dashboard page", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login", "Dashboard"</td>
-<td></td>
-<td>7</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with invalid credentials", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar text", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Login is present", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order  1st Program", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alignment input field for the login", "Login page Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify input descriptive test in user field", "Login page Validation"</td>
-<td></td>
-<td>0</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
 <td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login with valid credentials", "Login page Validation"</td>
 <td></td>
-<td>0</td>
+<td>5</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Check box on the data table", "User page1"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Delete button in Batch Page", "Batch Page Validation Feature"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate "+ A New user" button in User Page", "User page1"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate pagination in the Batch Page", "Batch Page Validation Feature"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify text on the second text field", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate row level edit icon", "Edit Batch features"</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  LMS title alignment", "Dashboard"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the fields are updated with valid values -Update the NoOfClasses", "Edit Batch features"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order 3rd User", "Dashboard"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if pop up include the field- Program Name as drop down", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the default state of Delete button", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate "+ Assign staff"  button in User page", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify LMS title", "Dashboard"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate landing in User page", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data table headers in the User Page", "User page1"</td>
-<td></td>
-<td>3</td>
-<td>testRunner.TestRun@1f9f6368</td></tr>
-<tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify asterik next to user text", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the delete icon below the header", "Delete Batch/Batches features"</td>
 <td></td>
 <td>0</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the company logo", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table when status is blank", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate navigation bar order  2nd Batch", "Dashboard"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table when program name is blank", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the text and pagination icon below the data table", "User page1"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if pop up include the field- Status as radio button", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate + Assign Student  button in User page", "User page1"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate "+ A New batch" in Batch Page", "Batch Page Validation Feature"</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the alignment of the login button", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data rows", "Batch Page Validation Feature"</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify for broken link", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table while creating new batch with valid values", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>10</td>
+<td>16</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify login button action through mouse", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the batch details are added in data table when name is blank click", "Add New Batch Feature Validation"</td>
 <td></td>
-<td>0</td>
+<td>2</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 <tr>
-<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify asterik next to password text", "Login page Validation"</td>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the fields are updated with invalid values -Update the Description", "Edit Batch features"</td>
 <td></td>
-<td>0</td>
+<td>7</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if pop up include the field- Number of classes as text box", "Add New Batch Feature Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if pop up include the field- Description as text box", "Add New Batch Feature Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate row level delete icon", "Delete Batch/Batches features"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data rows", "Batch Page Validation Feature"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate data rows", "Batch Page Validation Feature"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRun@1f9f6368</td></tr>
+<tr>
+<td title='testRunner.TestRun.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if the fields are updated with invalid values -Update the NoOfClasses", "Edit Batch features"</td>
+<td></td>
+<td>2</td>
 <td>testRunner.TestRun@1f9f6368</td></tr>
 </table><p>
 </body>

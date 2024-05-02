@@ -53,4 +53,68 @@ public class ConfigReader {
 //		String url = prop.getProperty("DashboardUrl");
 //		return url;
 //	}
+	
+	public String getDashboardUrl() {
+
+		String url = prop.getProperty("DashboardUrl");
+		return url;
+	}
+	public String geteditnewprogram() {
+
+		String editNewProgram = prop.getProperty("editnewprogram");
+		return editNewProgram;
+	}
+	public String geteditnewdescription() {
+
+		String editNewDescription = prop.getProperty("editnewdescription");
+		return editNewDescription;
+	}
+	public String getspecialdescription() {
+
+		String specialdescription = prop.getProperty("specdescription");
+		return specialdescription;
+	}
+	public String getspecialprogram() {
+
+		String specialprogram = prop.getProperty("specprogram");
+		return specialprogram;
+	}
+	public String getaddProgramName() {
+
+		String addprogramname = prop.getProperty("newprogram");
+		return addprogramname;
+	}
+	public String getaddProgramDescription() {
+
+		String addprogramdescription = prop.getProperty("newdescription");
+		return addprogramdescription;
+	}
+	public String getaddNewProgram() {
+
+		String addnewprogram = prop.getProperty("addnewprogram");
+		return addnewprogram;
+	}
+	public String getaddNewDescription() {
+
+		String addnewdescription = prop.getProperty("addnewdescription");
+		return addnewdescription;
+	}
+	
+	public String getUrl() {
+
+		String url = prop.getProperty("lmsUrl");
+		return url;
+	}
+
+	public String getUsername() {
+
+		String username = prop.getProperty("user");
+		return username;
+	}
+
+	public String getPassword() {
+
+		String password = prop.getProperty("password");
+		return password;
+	}
 }

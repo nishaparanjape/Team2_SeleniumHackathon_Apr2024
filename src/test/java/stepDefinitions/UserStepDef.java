@@ -18,7 +18,7 @@ public static WebDriver driver = driverBase.getDriver();
 
 @Given("Admin is on dashboard page after Login-dk")
 public void admin_is_on_dashboard_page_after_login_dd() throws InterruptedException {
-   	System.out.println("in user validation :::: " + driver.getCurrentUrl());
+   	//System.out.println("in user validation :::: " + driver.getCurrentUrl());
 	u= new UserPOM(driver); 
 	
     boolean isDashboardDisplayed = u.isDashboardDisplayed();
@@ -29,7 +29,6 @@ public void admin_is_on_dashboard_page_after_login_dd() throws InterruptedExcept
 @When("Admin clicks {string} from navigation bar-dk")
 public void admin_clicks_from_navigation_bar_dd(String string) throws InterruptedException {
    
-
 	u.user(); 
 	LoggerLoad.info("....................Navigated to  Manage User....................");
    
@@ -105,33 +104,32 @@ public void a_new_pop_up_with_user_details_appears_dd() throws InterruptedExcept
       u.user_edit_userdetails(); 
  LoggerLoad.info("...................Validated User Details Pop up....................");	      
 }
-@When("Update the fields with {string} {string} {string} {int} {string} {string} data and click submit")
-public void update_the_fields_with_data_and_click_submit(String string, String string2, String string3, Integer int1, String string4, String string5) {
-	    
+
+@When("Update the fields with{string} {string}{string} {string} {string} {string} {string} {string}{string} {string} {string} data and click submit")
+public void update_the_fields_with_data_and_click_submit(String data,String fn,String mn, String ln, String l, String pn, String lurl, String mail, String comments, String ug, String pg) throws InterruptedException {
+ 	u.user_details_data_from_examples(data,fn,mn,ln,l,pn,lurl,mail,comments,ug,pg); 
+	 
 }
 @Then("Admin gets {string} and see the updated values in data table")
-public void admin_gets_and_see_the_updated_values_in_data_table(String string) {
-   
+public void admin_gets_and_see_the_updated_values_in_data_table(String message) {
+	System.out.println("------ "+message);
+	LoggerLoad.info("...................Validated with Examples data....................");	          
 }
 
 
-@When("Update the fields with {string} {string} {string}  {string} {string} data and click submit")
-public void update_the_fields_with_data_and_click_submit(String string, String string2, String string3, String string4, String string5) {
-    
-    
-}
+
 
 
 @When("Admin clicks Cancel button on edit popup-dd")
-public void admin_clicks_cancel_button_on_edit_popup_dd() {
+public void admin_clicks_cancel_button_on_edit_popup_dd() throws InterruptedException {
     
-    
+    u.validate_userdetails_cancelbutton();
 }
 
 @Then("Admin can see the User details popup disappears and can see nothing changed for particular User-dd")
 public void admin_can_see_the_user_details_popup_disappears_and_can_see_nothing_changed_for_particular_user_dd() {
     
-   
+	LoggerLoad.info("...................Validated with Cancel button on user details....................");	          
 }
 
 
@@ -233,23 +231,7 @@ public void admin_can_see_the_deletion_alert_disappears_without_deleting_dd() {
 }
 
 
-//// @Userpagevalidation1
-//@Given("Admin is on dashboard page after Login-kk")
-//public void admin_is_on_dashboard_page_after_login_kk() throws InterruptedException {
-//	u= new UserPOM(driver.driver); 
-//        boolean isDashboardDisplayed = u.isDashboardDisplayed();
-//        Assert.assertTrue(isDashboardDisplayed);
-//        LoggerLoad.info("....................Admin logged in successfully....................");
-//    }
-// 
-//
-//@When("Admin clicks User from navigation bar-kk")
-//public void admin_clicks_user_from_navigation_bar_kk() throws InterruptedException {
-//	Thread.sleep(1000);
-//  u.userbtn();
-//  LoggerLoad.info("....................Admin click the user button....................");
-//}
-
+//@Userpagevalidation1
 @Then("Admin should see the Manage User in the URL")
 public void admin_should_see_the_manage_user_in_the_url() {
 	boolean isManageuserDisplayed = u.isManageuserDisplayed();
@@ -302,5 +284,60 @@ public void admin_should_be_able_to_see_the_assign_staff_button_above_the_data_t
     Assert.assertTrue(assignstaffbtn);
     LoggerLoad.info("....................Admin should be able to see the  Assign staff button....................");
 }
+
+
+@When("Admin clicks any checkbox in the data table-dd")
+public void admin_clicks_any_checkbox_in_the_data_table_dd() throws InterruptedException {
+   u.multiple_delete_icon();
+    
+}
+
+@Then("Admin should see common delete option enabled under header Manage Program-dd")
+public void admin_should_see_common_delete_option_enabled_under_header_manage_program_dd() {
+	 LoggerLoad.info("....................Admin See Delete icon on the manage user page....................");
+	}
+
+@Given("Admin is on Confirm Deletion alert-md")
+public void admin_is_on_confirm_deletion_alert_md() {
+   
+    
+}
+
+@When("Admin clicks <YES> button on the alert-dd")
+public void admin_clicks_yes_button_on_the_alert_dd() throws InterruptedException {
+   u.multiple_delete_yes();
+    
+}
+
+@Then("Admin should land on Manage User page and can see the selected user is deleted from the data table-dd")
+public void admin_should_land_on_manage_user_page_and_can_see_the_selected_user_is_deleted_from_the_data_table_dd() {
+   
+	LoggerLoad.info("....................Selecting single check box delete YES is validated ....................");
+}
+
+@When("Admin clicks <No> button on the alert-dd")
+public void admin_clicks_no_button_on_the_alert_dd() throws InterruptedException {
+   
+   u.multiple_delete_user_no();
+}
+
+@Then("Admin should land on Manage User page and can see the selected user is not deleted from the data table-dd")
+public void admin_should_land_on_manage_user_page_and_can_see_the_selected_user_is_not_deleted_from_the_data_table_dd() {
+	LoggerLoad.info("....................Selecting single check box delete NO is validated ....................");
+    
+}
+
+@Then("Admin should land on Manage User page and can see the selected users are deleted from the data table-dd")
+public void admin_should_land_on_manage_user_page_and_can_see_the_selected_users_are_deleted_from_the_data_table_dd() throws InterruptedException {
+	 u.multiple_delete_selectmultiplecheckbox_yes();
+	 LoggerLoad.info("....................Selecting multiple check box delete YES is validated ...................."); 
+}
+
+@Then("Admin should land on Manage User page and can see the selected users are not deleted from the data table-dd")
+public void admin_should_land_on_manage_user_page_and_can_see_the_selected_users_are_not_deleted_from_the_data_table_dd() throws InterruptedException {
+   u.multiple_delete_selectmultiplecheckbox_no();
+    
+   LoggerLoad.info("....................Selecting multiple check box delete NO is validated ...................."); 
+  }
 
 }
