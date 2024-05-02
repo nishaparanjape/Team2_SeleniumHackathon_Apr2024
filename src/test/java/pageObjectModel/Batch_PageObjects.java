@@ -64,7 +64,7 @@ public class Batch_PageObjects {
 	By descriptionErrMsg = By.xpath("//small[text()='Batch Description is required.']");
 	String progName = "qawarriors1";
 	String batchName1 = "qawarriors";
-	String batchName2 = "qawarriors7";
+	String batchName2 = "qawarriors11";
 	String batchDescription1 = "beginners";
 	By batchNameRow = By.xpath("//td[text()=batchName]");
 	
@@ -87,7 +87,7 @@ public class Batch_PageObjects {
 	// edit new batch
 	
 	By statusInactive1 = By.xpath("//div[@class='p-radiobutton-box']");
-	By nameWebTable = By.xpath("//td[normalize-space()='qawarriors']");
+	By nameWebTable = By.xpath("//tbody/tr[1]/td[2]");
 	By nameWebTable1 = By.xpath("//tbody/tr[1]/td[2]");
 	By descriptionWebTable1 = By.xpath("//tbody/tr[1]/td[3]");
 	By descriptionWebTable = By.xpath("//tbody/tr[1]/td[text()='level 1']");
@@ -109,12 +109,11 @@ public class Batch_PageObjects {
 			"//button[@class='ng-tns-c133-7 p-confirm-dialog-accept p-ripple p-button p-component ng-star-inserted']");
 	By deleteSuccess1 = By.xpath("//div[text()='Successful']");
 	By deleteSuccess2 = By.xpath("//div[text()='batch Deleted']");
-	By batchNameWebTable = By.xpath("//td[text()='qawarriors']");
-	By batchNameWebTable1 = By.xpath("//td[text()='qawarriors1']");
-	By batchNameWebTable2 = By.xpath("//td[text()='qawarriors1']");
 	
-	By webtableCheckBox = By.xpath("//td[text()='qawarriors']/../td/p-tablecheckbox/div");
-	By webtableCheckBox1 = By.xpath("//td[text()='qawarriors1']/../td/p-tablecheckbox/div");
+	By batchNameWebTable = By.xpath("//tbody/tr[1]/td[2]");
+
+	By webtableCheckBox = By.xpath("//tbody/tr[1]/td[2]/../td/p-tablecheckbox/div");
+	By webtableCheckBox1 = By.xpath("//tbody/tr[2]/td[2]/../td/p-tablecheckbox/div");
 
 	public void clickBatch() {
 
@@ -644,11 +643,11 @@ public class Batch_PageObjects {
 
 	}
 
-	public void deleteClick() {
-
-		driver.findElement(searchBox).sendKeys(batchName1);
-
-	}
+//	public void deleteClick() {
+//
+//		driver.findElement(searchBox).sendKeys(batchName1);
+//
+//	}
 
 	public void selectYes() {
 
