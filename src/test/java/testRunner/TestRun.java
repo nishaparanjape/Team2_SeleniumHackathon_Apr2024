@@ -17,21 +17,21 @@ import io.cucumber.testng.CucumberOptions;
     features = 
 //{"src/test/resources/features"},
 {"src/test/resources/features/01login.feature",
- //   		"src/test/resources/features/02dashboard.feature",    		
-//    		"src/test/resources/features/04programAdd.feature",
-//			"src/test/resources/features/05programEdit.feature",
-//			"src/test/resources/features/06programDelete.feature",
-//			"src/test/resources/features/07programMultipleDelete.feature",
+    		"src/test/resources/features/02dashboard.feature",    		
+    		"src/test/resources/features/04programAdd.feature",
+			"src/test/resources/features/05programEdit.feature",
+			"src/test/resources/features/06programDelete.feature",
+			"src/test/resources/features/07programMultipleDelete.feature",
 			"src/test/resources/features/08batchValidation.feature",
 			"src/test/resources/features/09batchAdd.feature",
 			"src/test/resources/features/10batchEdit.feature",
-			"src/test/resources/features/11batchDelete.feature"
-//			"src/test/resources/features/12userValidation.feature",
-//			"src/test/resources/features/13userAdd.feature",			
-//			"src/test/resources/features/14userEdit.feature",
-//			"src/test/resources/features/15userSort.feature",
-//			"src/test/resources/features/16userDelete.feature",
-//			"src/test/resources/features/17userMultipleDelete.feature"
+			"src/test/resources/features/11batchDelete.feature",
+			"src/test/resources/features/12userValidation.feature",
+			"src/test/resources/features/13userAdd.feature",			
+			"src/test/resources/features/14userEdit.feature",
+			"src/test/resources/features/15userSort.feature",
+			"src/test/resources/features/16userDelete.feature",
+			"src/test/resources/features/17userMultipleDelete.feature"
 			},
 
 
